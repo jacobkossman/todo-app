@@ -1,0 +1,98 @@
+body {
+  color: #2d3339;
+  font-family: "Varela Round";
+  text-align: center;
+  background: # edeff0;
+  font - size: 16 px;
+}
+
+a {
+  color: #3f8abf;
+  text-decoration: none;
+}
+
+a:hover {
+  color: # 65 a1cc;
+}
+
+.list {
+  background: #fff;
+  width: 80 %;
+  min - width: 500 px;
+  margin: 80 px auto 0;
+  border - top: 40 px solid #5a6772;
+  text-align: left;
+}
+
+.list .item {
+  border-bottom: 2px solid # edeff0;
+  padding: 17 px 0 18 px 17 px;
+}
+
+.list.item label {
+  padding - left: 5 px;
+  cursor: pointer;
+}
+
+.list.item.editing - label {
+  margin - left: 5 px;
+  font - family: "Varela Round";
+  border - radius: 2 px;
+  border: 2 px solid# a7b9c4;
+  font - size: 16 px;
+  padding: 15 px 0 15 px 10 px;
+  width: 60 %;
+}
+
+.list.item.actions {
+  float: right;
+  margin - right: 20 px;
+}
+
+.list.item.actions.delete {
+  color: #ed5a5a;
+  margin - left: 10 px;
+}
+
+.list.item.actions.delete: hover {
+  color: #f28888;
+}
+
+.list.item.editing.actions {
+  margin - top: 17 px;
+}
+
+.list.edited label: after {
+  content: " edited";
+  text - transform: uppercase;
+  color: #a7b9c4;
+  font - size: 14 px;
+  padding - left: 5 px;
+}
+
+.list.completed label {
+  color: #a7b9c4;
+  text - decoration: line - through;
+}
+
+.list.add {
+  padding: 25 px 0 27 px 25 px;
+}
+
+input[ type="checkbox"] {
+  display: none;
+}
+
+input[ type="checkbox"] + span {
+  display: inline - block;
+  width: 19 px;
+  height: 19 px;
+  margin: -1 px 4 px 0 0;
+  vertical - align: middle;
+  background: url(checkbox - empty.svg ) left top no - repeat;
+  cursor: pointer;
+}
+
+input[ type="checkbox"]: checked + span {
+  background: url(checkbox - filled.svg ) left top no - repeat;
+}
