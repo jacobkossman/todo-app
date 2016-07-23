@@ -1,7 +1,9 @@
 angular.module( 'todoListApp', [] )
-  .controller( 'mainCtrl', function( $scope ) {
-    $scope.helloWorld = function() {
-      console.log( "Hello from the helloWorld controller function, in the mainCtrl" );
+  .controller( 'mainCtrl', function( $scope, dataService ) {
+    $scope.helloConsole = dataService.helloConsole;
+
+    $scope.learningNgChange = function() {
+      console.log( "An input changed!" );
     };
 
     $scope.todos = [
@@ -12,4 +14,9 @@ angular.module( 'todoListApp', [] )
       { "name": "read a chapter of a book" },
       { "name": "wake up early" }
     ];
+  } )
+  .service( 'dataService', function() {
+    this.helloConsole = function() {
+      console.log( 'This is the hello console service' );
+    };
   } );
